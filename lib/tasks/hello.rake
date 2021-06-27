@@ -22,3 +22,9 @@ end
 task :execute do
   Rake::Task['hello:world'].execute
 end
+
+task :reenable do
+  puts 'Reenable!'
+  Rake::Task['invoke'].reenable
+  Rake::Task['hello:world'].reenable
+end
