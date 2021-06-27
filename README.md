@@ -1,24 +1,12 @@
-# README
+# Rake Experiments
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ruby 3.0.1 and rails 6.1.4
 
-Things you may want to cover:
+```
+bundle exec rake hello:world
+```
 
-* Ruby version
+See also:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [如何在 Rails 中寫 Rake Tasks](https://dwye.dev/post/rake/)
+- [Rake Tasks 進階：Invoke, Execute, Enhance](https://dwye.dev/post/rake-execute-invoke-enhance/)
