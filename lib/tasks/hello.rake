@@ -28,3 +28,19 @@ task :reenable do
   Rake::Task['invoke'].reenable
   Rake::Task['hello:world'].reenable
 end
+
+task :before do
+  puts 'before task'
+end
+
+task :before2 do
+  puts 'before task 2'
+end
+
+Rake::Task['hello:world'].enhance(%w[before]) do
+  puts 'after task'
+end
+
+Rake::Task['hello:world'].enhance(%w[before2]) do
+  puts 'after task 2'
+end
